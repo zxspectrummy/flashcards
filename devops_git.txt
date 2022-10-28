@@ -1,0 +1,17 @@
+git branch	a set of changes from a specific point in time
+commit changes to all tracked files commit -a
+create alias for a specific git comand and its arguments	"config --global alias.&lt;name&gt; &lt;command&gt;<br>e.g. <br>git config --global alias.lg 'log --all --decorate --graph --oneline'"
+uncommit + unstage changes, changes are left in working tree	reset --mixed (default)
+uncommit changes, changes are left staged (index)	reset --soft
+uncommit + unstage + delete changes	reset --hard
+git log with graphical of the commit history	log --graph
+abbreviate git log output	log --oneline
+git log for all the branches	log --all
+reattach a detached HEAD	set the pointer to the latest commit in the branch, e.g.<br>checkout master
+detached HEAD	you are at commit that has no reference (branch/tag) associated with it
+how to resolve a git conflict	1. git mergetool<br>2. put together the desired state<br>3. commit
+list all the available stashes	stash list
+get individual stash info	stash show stash@{0}
+get individual stash info including the specific changes	stash show --patch stash@{0}&nbsp;
+apply a specific stash	stash apply stash@{1}
+stage only the selected changed	add -i
