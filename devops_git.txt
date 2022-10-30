@@ -1,10 +1,9 @@
-git branch	a set of changes from a specific point in time
-commit changes to all tracked files commit -a
+git branch?	a set of changes from a specific point in time
 create alias for a specific git comand and its arguments	"config --global alias.&lt;name&gt; &lt;command&gt;<br>e.g. <br>git config --global alias.lg 'log --all --decorate --graph --oneline'"
 uncommit + unstage changes, changes are left in working tree	reset --mixed (default)
 uncommit changes, changes are left staged (index)	reset --soft
 uncommit + unstage + delete changes	reset --hard
-git log with graphical of the commit history	log --graph
+git log with graphical view of the commit history	log --graph
 abbreviate git log output	log --oneline
 git log for all the branches	log --all
 reattach a detached HEAD	set the pointer to the latest commit in the branch, e.g.<br>checkout master
