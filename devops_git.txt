@@ -13,4 +13,6 @@ list all the available stashes	stash list
 get individual stash info	stash show stash@{0}
 get individual stash info including the specific changes	stash show --patch stash@{0}&nbsp;
 apply a specific stash	stash apply stash@{1}
-stage only the selected changed	add -i
+stage only the selected changes	add -i
+git reflog?	allows to view references to the state of the repository at various points,&nbsp;<em>even if those points are no longer apparently reachable within the repository</em>.
+remove the last commit	checkout HEAD^
